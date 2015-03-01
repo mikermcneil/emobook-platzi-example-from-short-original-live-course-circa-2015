@@ -36,6 +36,10 @@ module.exports.routes = {
   //   controller: 'UserController',
   //   action: 'findOne'
   // },
+  //
+  //
+
+  'get /': '/mikermcneil',
 
 
   'get /twitter': {
