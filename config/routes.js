@@ -38,15 +38,21 @@ module.exports.routes = {
   // },
 
 
+  'get /twitter': {
+    controller: 'TwitterController',
+    action: 'handleLogin'
+  },
+
+  'get /me': {
+    controller: 'UserController',
+    action: 'whoami'
+  },
+
   'GET /:screenName': {
     controller: 'UserController',
     action: 'findOne'
   },
 
-  'get /twitter': {
-    controller: 'TwitterController',
-    action: 'handleLogin'
-  }
 
   // '/emoji/:id/takeover': {
   //   controller: 'EmojiController',
